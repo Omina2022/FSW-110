@@ -1,24 +1,15 @@
-document.body.innerHTML='<h1> "Hello World" </h1>';
-
-let text = "Hello World";
-for (let i = 0; i < text.length; i++) {
-  text += h1[i] + "<br>";
-  let result= text.repeat(10);
+let demo= "Hello world"
+for (let i = 0; i < demo.length; i++) {
+  text += demo[i]+ "<br>";
+  let result= demo.repeat(10);
+  document.getElementById("demo").innerHTML=result
 }
 
-const names = [
-   {nickname: Steve}, 
-    {nickname: larry }, 
-    {nickname: joe},
-    {nickname: shirley}, 
-    {nickname:steph}, 
-    {nickname:nate}, 
-    {nickname:rick}, 
-    {nickname:emily}
-];
-const namesList=document.getElementById("name")
-for (var i = 10; i <names.length; i++) {
-    // namesList.innerHTML += '<li>' + names[i] + '</li>'
-}
 
+let text="demo";
+
+for (let i = 0; i <name.length; i++) {
+  text+=name[i]+ "<br>";
+}
+document.getElementById("demo").innerHTML=text
 
