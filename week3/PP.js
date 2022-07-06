@@ -1,15 +1,22 @@
-let demo= "Hello world"
-for (let i = 0; i < demo.length; i++) {
-  text += demo[i]+ "<br>";
-  let result= demo.repeat(10);
-  document.getElementById("demo").innerHTML=result
+for (let i = 0; i <10; i++) {
+ var H1=document.createElement("H1")
+ H1.textContent=("Hello World")
+ document.body.append(H1)
+};
+
+
+const names = [
+  "Steve",
+   "Larry", 
+   "Joe",
+    "Shirley",
+     "Steph",
+      "Nate",
+       "Rick", 
+       "Emily"
+]
+
+const namesList=document.getElementById("names")
+for (const i=0;i<names.lenght; i++){
+  namesList.innerHTML+='<li>'+nameList[i]+'</li>'
 }
-
-
-let text="demo";
-
-for (let i = 0; i <name.length; i++) {
-  text+=name[i]+ "<br>";
-}
-document.getElementById("demo").innerHTML=text
-

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coffee Shop </title>
+    <link rel="stylesheet" href="Website.css">
+</head>
+<body>
+</body>
+<header>
+    <h2 class="title">Online Coffee Shop</h2>
+<ul class="menu"> <h3>Menu</h3>
+    <li>Bagel:$3</li>
+    <img src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" height="200px" width="200px">
+
+    <li>Tea:$7</li>
+    <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2334&q=80 " height="200px" width="200px">
+
+    <li>Coffee:$11</li>
+    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1021&q=80" height="200px" width="200px">
+</ul>
+    <form name="Choose">
+       <select id="mySelect">
+           <option value="3" class="1">Bagel 
+            </option>
+           <option value="7" class="2">Tea
+               <img src="Tea" alt="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2334&q=80 " height="200px" width="200px">
+           </option>
+           <option value="11" class="3">Coffee</option>
+       </select>
+       <input type="button" onclick="getOption()" value="Select">
+       <br><br>
+    </form>
+    <p id="type"></p>
+    
+    <input type="number" id="myNumber" value="quantity" >
+    
+    <button onclick="myFunction()">Price</button>
+    <p id="total"></p>
+    <script src="Website.js"></script>
+</header>
+<footer class="Last">
+Online Coffee Shop's:
+<h5>Address:</h5><address>1550 Wewatta St., Denver, CO 80202</address>
+<iframe src="https://locations.brueggers.com/us/co/denver/2000-s-university-boulevard" title="brueggers"></iframe>
+</footer>
+</html>
