@@ -7,19 +7,20 @@
     <title>Capstone</title>
     <link rel="stylesheet" href="Project.css">
 </head>
-<body app="myApp" controller="ToDoCtrl">
+<body> <img id="photo" src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80" width="200px" height="200px"> 
+  
     <h2>How to be organize in life</h2>
     <h3>Make a ToDo List:</h3>
-<div id="List">
-    <form ng-submit="ToDoAdd()">
-      <input type="text" model="ToDoInput" size="30" placeholder="list below">
-      <input type="submit" value="Add">
+<div id="newtask">
+    <form id="form"> 
+      
+      <input type="text" id="List" placeholder="List" >
+      <button id="submit">Submit</button>
+      <!-- <input type="submit" id="submit"> -->
     
-      <div repeat="x in ToDoList">
-        <input type="checkbox" model="x.done">
-        <span bind="x.ToDoText">
-        </span>
-      </div>
+<div id="checkbox">
+        <input type="checkbox" name="check">
+       </div>
       <button onclick="remove()">Remove</button>
     </form>
   </div>

@@ -1,16 +1,21 @@
-var app=.model(myApp,[]);
-app.controller('ToDoCtrl', function(i){
-i.ToDoList=[{TodoText:i.ToDoInput, done:false}];
-i.ToDoAdd=function(){
-    i.ToDoList.push({TodoText:i.ToDoInput,done:false});
-    i.ToDoInput="";
-};
-i.remove=function(){
-    var old=i.ToDoList;
-i.ToDoList=[];
-angular.forEach(old,function(x){
-    if(x.done)i.ToDoList.push(x);
-    
-});
-};
-});
+var form=document.getformById("form")
+var todoList=document.getListById("todo-List")
+var input1=document.getInputById("List")
+var input2=document.getInputById("submit")
+
+form.eventListener("submit, function")
+function form(event){
+    var value1=input1.value
+    var value2=input2.value
+var todo=createDiv
+
+var deleteButton=document.deleteButtonBytext ("delete")
+deleteButton.parentNode.removeChild(deleteButton)
+var checkbox=createInput
+input1.type="checkbox"
+
+var text= createSpan
+
+todo.append(checkbox,text,deleteButton)
+todoList.append("todo")
+}

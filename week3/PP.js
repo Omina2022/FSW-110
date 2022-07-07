@@ -16,7 +16,18 @@ const names = [
        "Emily"
 ]
 
-const nameList=document.getElementById("name")
-for (const i=0;i<names.lenght; i++){
-  nameList.innerHTML+='<li>'+nameList[i]+'</li>'
+// let nameList="nameList";
+// for (let i=0; i<names.length; i++){
+//   const name=document.getElementById("demo").innerHTML = nameList;
+//   nameList+=names[i]
+// }
+// const nameList=document.getElementById("name")
+// for (const i=0;i<names.lenght; i++){
+//   nameList.innerHTML+='<li>'+nameList[i]+'</li>'
+// }
+
+let text="Name List:";
+for(const x of names){
+  text +=x + "<br>";
 }
+document.getElementById("name").innerHTML = text;
