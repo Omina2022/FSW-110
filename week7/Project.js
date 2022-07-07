@@ -7,11 +7,11 @@ form.eventListener("submit, function")
 function form(event){
     var value1=input1.value
     var value2=input2.value
-var todo=createDiv
+var todo=document.createElement("div")
 
 var deleteButton=document.deleteButtonBytext ("delete")
 deleteButton.parentNode.removeChild(deleteButton)
-var checkbox=createInput
+var checkbox=document.createElement("Input")
 input1.type="checkbox"
 
 var text= createSpan
