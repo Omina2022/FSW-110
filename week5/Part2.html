@@ -7,27 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form info="MyInformation">
-        <input type="text" placeholder="First Name"/>
-        <input type="text" placeholder="Last Name"/>
-        <button>Submit</button>
+    <form  id="MyInfo">
+        <div id="name">
+        <input type="text" id="firstName" placeholder="First Name"/>
+        <input type="text" id="lastName" placeholder="Last Name"/>
+       </div>
         <h3>Have you shopped with us before?</h3>
+        <div id="yesNo">
         Yes<input type="radio" name="decision" value="Yes">
         No <input type="radio" name="decision" value="No">
-        <button type="submit">Submit</button>
-<h4>Age</h4>
-        <input type="age" id="myAge" >
+    </div>
+  
+         <h4>Age</h4>
+        <input type="myAge" id="myAge" >
         <p id="demo"></p>
-        <button onclick="myFunction()">Submit</button>
+      
 
         <h4>Do you have any dietary restrictions? </h4>
-<form name="dietary">
+<div id="dietary">
     gluten free <input type="checkbox" name="decision" value="gluten free">
     keto <input type="checkbox" name="decision" value="keto">
     vegetarian <input type="checkbox" name="decision" value="vegetarian">
-    <button type="submit"> Submit</button>
-</form>
+</div>
+<button >Submit</button>
     </form>
-    <script src=PPart2.js></script>
+    <script src=Part2.js></script>
 </body>
 </html>

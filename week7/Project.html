@@ -7,9 +7,22 @@
     <title>Capstone</title>
     <link rel="stylesheet" href="Project.css">
 </head>
-<body>
-    <h2 class="logo">Smile</h2>
-
+<body app="myApp" controller="ToDoCtrl">
+    <h2>How to be organize in life</h2>
+    <h3>Make a ToDo List:</h3>
+<div id="List">
+    <form ng-submit="ToDoAdd()">
+      <input type="text" model="ToDoInput" size="30" placeholder="list below">
+      <input type="submit" value="Add">
+    
+      <div repeat="x in ToDoList">
+        <input type="checkbox" model="x.done">
+        <span bind="x.ToDoText">
+        </span>
+      </div>
+      <button onclick="remove()">Remove</button>
+    </form>
+  </div>
   <script src="Project.js"></script>
 </body>
 </html>
